@@ -6,7 +6,7 @@ import { models } from "@/data/models";
 
 export default function ModelSelector() {
   const [open, setOpen] = useState(false);
-  const [selected, setSelected] = useState(models[0]);
+  const [selected, setSelected] = useState<(typeof models)[number]>(models[0]);
 
   return (
     <div className="relative">
